@@ -1,0 +1,265 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+    <script src = "js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script> 
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script>$(function(){
+        $("#accordion").accordion(); 
+    });</script>
+    <!-- <script>
+        $(function(){
+            $('#container-graph').highcharts({
+                chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Weekly Workload by Month'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+        title: {
+            text: ' Average Number of Hours Worked on School Each Week'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: '2020',
+        data: [7.0, 6.9, 9.5, 14.5, 8.4, 5.5, 5.2, 6.5, 3.3, 8.3, 3.9, 9.6]
+    }, {
+        name: '2021',
+        data: [3.9, 4.2, 5.7, 8.5, 1.9, 5.2, 7.0, 6.6, 4.2, 0.3, 6.6, 4.8]
+    }]
+
+            });
+        });
+    </script> -->
+<meta charset="utf-8" />
+<meta name = "author" content = "Pamela's Diner ">
+<meta name = "keywords" content = "Pamela's Diner">
+<meta name = "description" content = "Pamela's Diner"> 
+<link rel = "stylesheet" media="all" type="text/css" href = "css/styles.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+<title> Pamela's Diner </title>
+
+
+
+</head>
+<body>
+    <div id="container">
+    <div id="top_row">
+<header>
+    <h1> Pamela's Diner </h1>
+    <h3> 93 years of tradition</h3>
+</header>
+<nav>
+    <a href="index.html"> About</a>
+    <a href="menu.html"> Menu/Order Online</a>
+    <a class="selected" href="locations.html">locations</a>
+    <a href="WES.html"> What everyone's saying </a>
+    <a href="applyhere.html">apply here </a>
+    <!-- <a href="orderonline.html">order online</a> -->
+</nav>
+</div>
+<div id = "content"> 
+<h4 id = "locate">Locations </h4>
+ <div id = "accordion">
+    <h4>Pamela's Diner Strip District </h4>
+    <div><p>
+      
+       <p>Please use the below map to find us</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.0271756615696!2d-79.98474782412853!3d40.45193399481495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f3dcdf678413%3A0x2b6723dae7142a78!2sPamela&#39;s%20Diner!5e0!3m2!1sen!2sus!4v1648930767512!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <div id="contstrip">
+        <h4 id="contactstrip">Contact us </h4>
+    <strong>Strip District store </strong><br/>
+    60 21st St<br/>
+    Pittsburgh, PA 15222<br/>
+    <strong>phone number </strong><br/>
+    412-281-6366<br/>
+    <strong>email: </strong><br/>
+   <a href = "mailto:pam@pamelasdiner.com"><img src = "images/email.png" alt = "Email Icon"></a><br/><br/>
+</div>
+    </p>
+    <strong> hours: </strong><br/>
+    <ul>
+        Tuesday
+        <li>8AM-2PM</li>
+        Wednesday 
+        <li>8AM-2PM</li>
+        Thursday
+        <li>8AM-2PM</li>
+        Friday 
+        <li>8AM-2PM</li>
+        Saturday 
+        <li>8AM-2PM</li>
+        Sunday 
+        <li>8AM-2PM</li>
+        Monday 
+        <li>8AM-2PM</li>
+    </ul>
+</div>
+    <h4>Pamela's Diner Forbes Ave </h4>
+    <div><p>
+        <p>Please use the below map to find us</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.1333219346735!2d-79.95834558476515!3d40.441332257769254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f229e57e54fb%3A0x85711e3bfcf4be29!2sPamela&#39;s%20Diner!5e0!3m2!1sen!2sus!4v1648930991076!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="cont">
+        <h4 id="contactus">Contact us </h4>
+    <strong>Forbes Avenue store </strong><br/>
+    3703 Forbes Ave<br/>
+    Pittsburgh, PA 15213<br/>
+    <strong>phone number </strong><br/>
+    412-268-4066<br/>
+    <strong>email: </strong><br/>
+   <a href = "mailto:pam@pamelasdiner.com"><img src = "images/email.png" alt = "Email Icon"></a><br/><br/>
+</div>
+    </p>
+    <strong> hours: </strong><br/>
+    <ul>
+        Tuesday
+        <li>8AM-2PM</li>
+        Wednesday 
+        <li>8AM-2PM</li>
+        Thursday
+        <li>8AM-2PM</li>
+        Friday 
+        <li>8AM-2PM</li>
+        Saturday 
+        <li>8AM-2PM</li>
+        Sunday 
+        <li>8AM-2PM</li>
+        Monday 
+        <li>8AM-2PM</li>
+    </ul>
+</div>
+    <h4>Pamela's Diner Walnut St. </h4>
+    <div><p>
+        <p> Please use the below map to find us</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069067161628!2d-79.93501624941106!3d40.45160827925984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211af1bfba7%3A0x21ad7841ff8f2025!2sPamela&#39;s%20%7C%20P%26G%20Diner!5e0!3m2!1sen!2sus!4v1648931131505!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="contwalnut">
+        <h4 id="contactwalnut">Contact us </h4>
+    <strong> Walnut street store </strong><br/>
+    5527 Walnut St #2<br/>
+    Pittsburgh, PA 15232<br/>
+    <strong>phone number </strong><br/>
+    412-683-1003<br/>
+    <strong>email: </strong><br/>
+   <a href = "mailto:pam@pamelasdiner.com"><img src = "images/email.png" alt = "Email Icon"></a><br/><br/>
+</div>
+    </p>
+    <strong> hours: </strong><br/>
+    <ul>
+        Tuesday
+        <li>8AM-2PM</li>
+        Wednesday 
+        <li>8AM-2PM</li>
+        Thursday
+        <li>8AM-2PM</li>
+        Friday 
+        <li>8AM-2PM</li>
+        Saturday 
+        <li>8AM-2PM</li>
+        Sunday 
+        <li>8AM-2PM</li>
+        Monday 
+        <li>8AM-2PM</li>
+    </ul>
+</div>
+    <h4>Pamela's Diner Mt. Lebanon</h4>
+    <div><p>
+
+        <p>Please use the below map to find us</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0279664412046!2d-80.04596094941343!3d40.386072779267444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f772ea8f593f%3A0xd7ff4cd134537b0b!2sPamela&#39;s%20P%20%26%20G%20Diner%20%7C%20Mt.%20Lebanon!5e0!3m2!1sen!2sus!4v1648931318309!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <div id="contleb">
+            <h4 id="contactleb">Contact us </h4>
+        <strong> Mt. Lebanon store </strong><br/>
+        427 Washington Rd<br/>
+        Pittsburgh, PA 15228<br/>
+        <strong>phone number </strong><br/>
+        412-343-3344<br/>
+        <strong>email: </strong><br/>
+       <a href = "mailto:pam@pamelasdiner.com"><img src = "images/email.png" alt = "Email Icon"></a><br/><br/>
+    </div> 
+    </p>
+    <strong> hours: </strong><br/>
+    <ul>
+        Tuesday
+        <li>CLOSED</li>
+        Wednesday 
+        <li>8AM-2PM</li>
+        Thursday
+        <li>8AM-2PM</li>
+        Friday 
+        <li>8AM-2PM</li>
+        Saturday 
+        <li>8AM-2PM</li>
+        Sunday 
+        <li>8AM-2PM</li>
+        Monday 
+        <li>CLOSED</li>
+    </ul>
+</div>
+<h4>Pamela's Diner Squirrel Hill</h4>
+        <div><p>
+            <p>Please use the below map to find us</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6986176943515!2d-79.92502504941154!3d40.43767197926143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f201d20f40ff%3A0xcfa5bf31a3f22b9a!2sPamela&#39;s%20P%26G%20Diner!5e0!3m2!1sen!2sus!4v1648931394921!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="contsq">
+                <h4 id="contactsq">Contact us </h4>
+            <strong> Squirrel Hill store </strong><br/>
+            1711 Murray Ave<br/>
+            Pittsburgh, PA 15217<br/>
+            <strong>email: </strong><br/>
+           <a href = "mailto:pam@pamelasdiner.com"><img src = "images/email.png" alt = "Email Icon"></a><br/><br/>
+        </div>
+        </p>
+        <strong> hours: </strong><br/>
+        <ul>
+            Tuesday
+            <li>CLOSED</li>
+            Wednesday 
+            <li>CLOSED</li>
+            Thursday
+            <li>CLOSED</li>
+            Friday 
+            <li>8AM-2PM</li>
+            Saturday 
+            <li>8AM-2PM</li>
+            Sunday 
+            <li>8AM-2PM</li>
+            Monday 
+            <li>CLOSED</li>
+        </ul>
+    </div>
+</div> 
+</div>
+<div id = "sidebar">
+    <h4> Our excellence!</h4> 
+    <img src="images/excel1.png" alt="Excellent ratings from trip advisor"/> <br/>
+    <img src="images/googleratings.png" alt="Excellent ratings from google"/><br/>
+    <img src="images/yelpratings.png" alt="Excellent ratings from yelp"/><br/>
+</div>
+
+
+
+<footer>
+    &copy; 2021 Pamela's Diner &trade; <a href = "https://www.facebook.com/pamelasdiner/"><img src = "images/facelogo.png" alt = "facebook Icon"></a> <a href = "https://www.instagram.com/pamelasdiner/?hl=en"><img src = "images/instalogo.png" alt = "instagram Icon"></a>   <br>
+</footer>
+</div>
+</body>
+
+
+
+</html>

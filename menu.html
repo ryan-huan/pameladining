@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+<link rel = "stylesheet" media="all" type="text/css" href = "css/styles.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+<script src = "js/jquery-3.6.0.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src = "js/jquery-ui.min.js" type="text/javascript"></script>
+<script src = "js/jquery.lightbox.min.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+<script>
+    $(function(){
+        $("accordion").accordion(); 
+    });
+</script>
+<script>
+    $(function(){
+        $("#tabs").tabs({
+
+            event: "mouseover"
+        });
+    });
+</script>
+<script type="text/JavaScript">
+    $(function(){
+        $('#gallery a').lightBox(); 
+    });
+</script>
+<meta charset="utf-8" />
+<meta name = "author" content = "Pamela's Diner">
+<meta name = "keywords" content = "Pamela's Diner ">
+<meta name = "description" content = "Pamela's Diner "> 
+<link rel = "stylesheet" media="all" type="text/css" href = "css/styles.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+<title> Pamela's Diner </title>
+
+
+
+</head>
+<body>
+    <div id="container">
+        <div id="top_row">
+<header>
+    <h1> Pamela's Diner   </h1>
+    <h3> 93 years of tradition </h3>
+    <img src="images/pamelaslogo.jpg" alt="pamelas diner logo"/>
+</header>
+<nav>
+<a href="index.html"> About</a>
+<a class="selected" href="menu.html"> Menu/Order online</a>
+<a href="locations.html">locations</a>
+<a href="WES.html"> What everyone's saying </a>
+<a href="applyhere.html">apply here </a>
+<!-- <a href="orderonline.html">order online</a> -->
+</nav>
+</div>
+<div id = "content"> 
+<h3> Menu</h3>
+    <!-- <div id="content-gallery">
+
+        <p>Click on the thumbnail to see full image and description</p>
+
+       <div id="gallery">
+
+                  <div id="galleryThumbnail1"><div id="thmbnlShadow1">
+
+                 <a href="images/image1.jpg"  title="The case analysis project evaluated a variety of business strategies and technology strategies for Walmart.">
+
+                <img src="images/image1thumb.jpg" alt="image 1"/></a></div></div>
+
+                
+                <div id="galleryThumbnail2"><div id="thmbnlShadow2">
+
+                    <a href="images/image2.jpg"  title="The web development project utilized several front-end web development techniques using HTML.">
+   
+                   <img src="images/image2thumb.jpg" alt="image 2"/></a></div></div>
+   
+                   
+                   <div id="galleryThumbnail3"><div id="thmbnlShadow3">
+
+                    <a href="images/image3.jpg"  title="The Databse project included an ERD and several data manipulation techniques in MySQL.">
+   
+                   <img src="images/image3thumb.jpg" alt="image 3"/></a></div></div>
+   
+                </div>   
+        </div> -->
+<table>
+    <tr> <th colspan ="3">Menu by location</th></tr>
+    <tr>
+       
+        <th>Location</th>
+        <th>Menu</th>
+        <th>Order online</th>
+    </tr>
+    <tr onmouseover="showDescription('Here is the menu for the Squirrel Hill location');" onmouseout="hideDescription();">
+        <td>Squirrel Hill store</td>
+        <td><button onclick="window.open('sq_hill_menu.pdf');">Menu </button></td>
+        <td><strong> Unavailable</strong></td>
+    </tr>
+    <tr onmouseover="showDescription('Here is the menu for the Strip District location');" onmouseout="hideDescription();">
+        <td>Strip District store</td>
+        <td><button onclick="window.open('strip_menu.pdf');">Menu </button></td>
+        <td><button onclick="window.open('https://www.toasttab.com/pamela-s-diner-strip-district-60-21st-street/v3');"> Order online </button></td>
+    </tr>
+    <tr onmouseover="showDescription('Here is the menu for the Shadyside location');" onmouseout="hideDescription();">
+        <td>Shadyside store</td>
+        <td><button onclick="window.open('shadyside_menu.pdf');">Menu </button></td>
+        <td><button onclick="window.open('https://www.toasttab.com/pamelas-diner-shadyside-5527-walnut-st/v3');"> Order online </button></td>
+    </tr>
+    <tr onmouseover="showDescription('Here is the menu for the Mt. Lebanon location');" onmouseout="hideDescription();">
+        <td>Mt. Lebanon store</td>
+        <td><button onclick="window.open('mtlebanon_menu.pdf');">Menu </button></td>
+        <td><button onclick="window.open('https://www.toasttab.com/pamelas-diner-mt-lebanon-427-washington-road/v3');"> Order online </button></td>
+    </tr>
+</table>
+<div id="description"></div> 
+</div>
+<div id = "sidebar">
+    
+    <h4> Our excellence!</h4> 
+        <img src="images/excel1.png" alt="Excellent ratings from trip advisor"/> <br/>
+        <img src="images/googleratings.png" alt="Excellent ratings from google"/><br/>
+        <img src="images/yelpratings.png" alt="Excellent ratings from yelp"/><br/>
+    </div>
+
+
+
+<footer>
+    &copy; 2021 Pamela's Diner &trade; <a href = "https://www.facebook.com/pamelasdiner/"><img src = "images/facelogo.png" alt = "facebook Icon"></a> <a href = "https://www.instagram.com/pamelasdiner/?hl=en"><img src = "images/instalogo.png" alt = "instagram Icon"></a>   <br>
+</footer>
+</div>
+</body>
+
+
+
+</html>

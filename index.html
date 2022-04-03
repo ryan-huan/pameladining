@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    
+<head>
+    
+<meta charset="utf-8" />
+<meta name = "author" content = "Ryan Huang">
+<meta name = "keywords" content = "Pamela's Diner">
+<meta name = "description" content = "Pamela's Diner"> 
+<link rel = "stylesheet" media="all" type="text/css" href = "css/styles.css"/>
+<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+<title> Pamela's Diner </title>
+<script src = "js/jquery-3.6.0.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src = "js/jquery-ui.min.js" type="text/javascript"></script>
+<script>$(function(){
+    $("#accordion").accordion(); 
+});</script>
+
+
+</head>
+<body>
+    <div id="container">
+    <div id ="top_row">
+        <header>
+            <h1> Pamela's Diner </h1>
+            <h3> 93 years of tradition</h3>
+            <img src="images/PamelaLogo.png" alt="pamelas diner logo"/>
+        </header>
+        <nav>
+            <a class="selected" href="index.html"> About</a>
+            <a href="menu.html">Menu/Order online</a>
+            <a href="locations.html"> Locations</a>
+            <a href="WES.html"> what everyone's saying </a>
+            <!-- <a href="citations.html">citations </a> -->
+            <a href="applyhere.html">apply here</a>
+            <!-- <a href="orderonline.html">order online</a> -->
+        </nav>
+    </div>
+<div id = "content"> 
+<h3>About Us</h3>
+
+    <p>Welcome to Pamela's where we specialize in crêpe-style pancakes, omelets and Lyonnaise potatoes! Please take a look at the options on the top left!</p><br/>
+    <p>An introduction to us: <a href="https://www.discovertheburgh.com/pamelas-review/" target="_blank">Pamela's Diner</a></p><br/>
+    <p>Have a look at some of our specialties below: </p>
+<div id="images">
+<div class="row">
+    <div class="column">
+<img src="images/pam1.jpg" alt="chorizo hash, cheesy eggs, and tortillas">
+<img src= "images/pam2.jpg" alt="hash browns, eggs, bacon strips, and pancake with butter on top"/>
+</div>
+<div class="column">
+<img src="images/pam3.jpg" alt="corned beef hash with toasted bread on top of scrambled eggs"/>
+<img src="images/pam4.jpg" alt="stacked pancakes"/>
+
+</div>
+<div class="column">
+    <img src="images/pam5.jpg" alt="hash browns, scrambled eggs, and two pieces of toasted bread"/>
+<img src="images/pam6.jpg" alt="pouring Heinz ketchup on hamburger with fries"/>
+
+</div>
+<div class="column">
+    <img src="images/pam7.jpg" alt="strawberry crepes"/>
+</div>
+</div>
+
+</div>
+<h3>Contact</h3>
+<!-- <div id="container-graph"></div> -->
+<h4>Subscribe to our newsletter! </h4>
+<form onsubmit="return validate()">
+    <fieldset>
+        <legend>Tell us about yourself:</legend>
+        <label for="uname"> Name:</label><br/>
+        <input type="text" id="uname" name ="uname" value="" size="20" maxlength = "250" placeholder="First Name, Last Name" required><br/> <br/>
+        <!-- <label for="txtDate">Your date of birth(required):</label><br/>
+        <input type="date" id="txtDate" name="txtDate" value="mm/dd/yyyy" size="20" required><br/><br/> -->
+        <label for="zip">Zip Code(not required)</label><br/>
+        <input type="text" id="zip" name="zip" value="" size="5" required><br/><br/>
+        
+
+
+
+    </fieldset>
+    <!-- <fieldset>
+        <legend>Tell me about your preferences</legend>
+        <label for="flower">Your favorite flower color:</label><br/>
+        <input type="color" id="flower" name="flower"><br/><br/>
+        <label for="mes">message:</label>
+        <textarea id="mes" name="mes" rows="10" cols="50" maxlength="1000"></textarea><br/><br/>
+
+    </fieldset> -->
+    <fieldset>
+        <legend>Let's stay in touch</legend>
+        <label for="source"> How did you find out about us?</label>
+        <select id="source">
+            <option value="Google" selected>Google</option>
+            <option value="news">News article</option> 
+            <option value="friend">Friend</option>
+            <option value="other">Other</option>
+        </select><br/><br/>
+        <label for="update">Please indicate if you want to subscribe to newsletter:</label>
+        <input type="checkbox" id="update" name="update" value="update"><br/><br/>
+        <label for="uemail">Please provide your email address</label>
+        <input type="email" id="uemail" name="uemail" placeholder="abc@defg.com" required><br/><br/>
+        <label for="phone">Please provide your phone number</label>
+        <input type="text" id="phone" name="phone" value="" required><br/><br/>
+        <!-- <label for="upassword">Choose a password</label>
+        <input type="password" id="upassword" name="upassword" maxlength="20" required><br/><br/> -->
+       
+
+    </fieldset>
+    <fieldset>
+  <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+    </fieldset>
+</form>
+</div>
+ <div id = "sidebar">
+    <h4> Our excellence!</h4> 
+    <img src="images/excel1.png" alt="Excellent ratings from trip advisor"/> <br/>
+    <img src="images/googleratings.png" alt="Excellent ratings from google"/><br/>
+    <img src="images/yelpratings.png" alt="Excellent ratings from yelp"/><br/>
+</div>
+
+
+<footer>
+     &copy; 2021 Pamela's Diner &trade; <a href = "https://www.facebook.com/pamelasdiner/"><img src = "images/facelogo.png" alt = "facebook Icon"></a> <a href = "https://www.instagram.com/pamelasdiner/?hl=en"><img src = "images/instalogo.png" alt = "instagram Icon"></a>   <br>
+</footer>
+</div>
+</body>
+
+
+
+</html>
